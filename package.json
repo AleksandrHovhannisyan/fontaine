@@ -38,7 +38,7 @@
     "lint:all:prettier": "pnpm lint:prettier \"{src,test}/**/*.{js,json,ts}\"",
     "lint:eslint": "eslint --fix",
     "lint:prettier": "prettier --write --loglevel warn",
-    "prepare": "husky install && pnpm build",
+    "prepare": "npx pnpm build",
     "prepublishOnly": "pnpm lint && pnpm test && pinst --disable",
     "release": "release-it",
     "test": "vitest run",
